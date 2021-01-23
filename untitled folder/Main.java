@@ -1,0 +1,38 @@
+import java.util.Scanner;
+
+public class Main {
+    Node head;
+
+    class Node {
+        int data;
+        Node prev;
+        Node next;
+        Node(int data) {
+            this.data = data;
+        }
+    }
+
+    public void insert(int newData) {
+        Node newNode = new Node(newData);
+        newNode.next = head;
+        newNode.prev = null;
+        if(head != null) {
+            head.prev = newNode;
+        }
+        head = newNode;
+    }
+
+    public static void main(String[] args) {
+        Main dll = new Main();
+        Scanner sc = new Scanner(System.in);
+        int n = sc.nextInt();
+        for(int i=0; i<n; i++) {
+            String action = sc.next();
+            switch(action) {
+                case "insert":
+                    dll.insert(sc.nextInt());
+
+            }
+        }
+    }
+}
