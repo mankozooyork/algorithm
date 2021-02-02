@@ -4,6 +4,7 @@ public class Solution {
     public static void main(String[] args) {
         System.out.println(solution("(()(())())"));
         System.out.println(solution("())"));
+        // This case should be not "properly nested"
         System.out.println(solution("))(("));
     }
     public static int solution(String S) {
