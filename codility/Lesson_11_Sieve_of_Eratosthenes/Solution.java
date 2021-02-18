@@ -5,27 +5,28 @@ public class Solution {
         System.out.println(Arrays.toString(solution(new int[] {3,1,2,3,6})));
     }
     public static int[] solution(int[] A) {
-        int[] count = new int[A.length*2+1];
+        int[] counts = new int[A.length*2+1];
         for(int i=0; i<A.length; i++) {
-            count[A[i]]++;
+            counts[A[i]]++;
         }
 
         int[] ans = new int[A.length];
         for(int i=0; i<A.length; i++) {
-            int divisors = 0;
-            // try to find the number that can be divided by the number from 1
+            int divisibleCount = 0;
+            // try to divide A[i] by the number from 1 to sqrt(A[i])
             for(int j=1; j*j<=A[i]; j++) {
                 if(A[i] % j == 0) {
                     // just add count[j] because it's already counted
-                    divisors += count[j];
+                    divisibleCount += counts[j];
                     if(A[i] / j != j) {
                         // don't forget to put opposite number if it can
-                        divisors += count[A[i] / j];
+                        divisibleCount += counts[A[i] / j];
                     }
                 }
             }
-            // substract the divisotrs that will be an answer
-            ans[i] = A.length - divisors;
+            // substract the divisors that will be an answer
+            // answer is list all the number that non-divisible number for A[i]
+            ans[i] = A.length - divisibleCount;
         }
         return ans;
     }
