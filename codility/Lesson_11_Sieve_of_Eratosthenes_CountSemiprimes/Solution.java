@@ -1,5 +1,7 @@
+package codility.Lesson_11_CountSemiprimes;
+
 import java.util.*;
-public class Solution10 {
+public class Solution {
     public static void main(String[] args) {
         System.out.println(Arrays.toString(solution(26, new int[] {1,4,16}, new int[] {26,10,20})));
        //System.out.println(Arrays.toString(solution(1, new int[] {1}, new int[] {1})));

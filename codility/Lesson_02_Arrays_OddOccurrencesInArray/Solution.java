@@ -1,3 +1,5 @@
+package codility.Lesson_02_Arrays_OddOccurrencesInArray;
+
 import java.util.*;
 
 class Solution {

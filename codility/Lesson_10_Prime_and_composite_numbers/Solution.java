@@ -1,3 +1,5 @@
+package codility.Lesson_10_Prime_and_composite_numbers;
+
 import java.util.*;
 class Solution {
     public static void main(String[] args) {
