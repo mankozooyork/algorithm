@@ -1,3 +1,5 @@
+package codility.Lesson_08_Leader_Dominator;
+
 import java.util.*;
 
 class Solution {

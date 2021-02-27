@@ -1,10 +1,11 @@
+package codility.Lesson_02_Arrays_CyclicRotation;
+
 import java.util.*;
 
 class Solution {
     public int[] solution(int[] A, int K) {
         // write your code in Java SE 8
         List<Integer> na = new ArrayList<>();
-        int index = 0;
         for(int i=0; i<A.length; i++) {
             na.add(A[i]);
         }

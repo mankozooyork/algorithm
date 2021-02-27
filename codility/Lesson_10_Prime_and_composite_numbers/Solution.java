@@ -1,26 +1,45 @@
+package codility.Lesson_10_Prime_and_composite_numbers;
+
 import java.util.*;
-public class Solution {
+class Solution {
     public static void main(String[] args) {
-        System.out.println(solution(new int[] {}));
+        //System.out.println(solution(new int[] {1,5,3,4,3,4,1,2,3,4,6,2}));
+        System.out.println(solution(new int[] {0, 0, 0, 0, 0, 1, 0, 1, 0, 1}));
     }
     public static int solution(int[] A) {
-        ArrayList<Integer> peaks = new ArrayList<>();
+        int[] peaks = new int[A.length];
+        Arrays.fill(peaks, -1);
         for(int i=1; i<A.length-1; i++) {
-            if(A[i] > A[i] && A[i] > A[i+1]) {
-                peaks.add(i);
+            if(A[i] > A[i-1] && A[i] > A[i+1]) {
+                peaks[i] = i;
             }
         }
 
-        int maxLoopCnt = (int)Math.ceil(Math.sqrt(peaks.get(peaks.size()-1)-peaks.get(0)));
-        int lastFlagIndex = 0;
-        for(int i=maxLoopCnt; i>0; i--) {
-            int flags = 1;
-            for(int j=1; j<i; j++) {
-                flags++;
-                lastFlagIndex = j;
+        int[] nextPeaks = new int[A.length];
+        int peakIndex = -1;
+        // need to be reversed cuz answer will be evaluated from the frist index
+        for(int i=A.length-1; i>=0; i--) {
+            if(peaks[i] != -1) {
+                peakIndex = i;
             }
-            if(flags == i) return flags;
+            nextPeaks[i] = peakIndex;
+        }        
+
+        int ans = 0; 
+        // it usually loop though i*i, but we need iterate if flag=1, that's why (i-1)*i
+        for(int flags=1; (flags-1)*flags<A.length; flags++) {
+            int indexForPeak = 0;
+            boolean success = true;
+            for(int i=0; i<flags; i++) {
+                if(indexForPeak >= nextPeaks.length || nextPeaks[indexForPeak] < 0) {
+                    success = false;
+                    break;
+                }
+                indexForPeak = nextPeaks[indexForPeak] + flags;
+            }
+            if(success) ans = Math.max(ans, flags);
         }
-        return 0;
+
+        return ans;
     }
 }
