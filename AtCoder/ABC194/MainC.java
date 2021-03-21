@@ -3,6 +3,7 @@ import java.util.*;
 public class MainC {
     public static void main(String[] args) {
         Scanner sc = new Scanner(System.in);
+        final int maxA = 200;
         int N = sc.nextInt();
         int[] A = new int[N];
     
@@ -13,16 +14,16 @@ public class MainC {
     
         // +200 because A[i] may start with -200
         // index will be 0 when -200 is coming
-        int[] d = new int[200*2+1];
+        int[] d = new int[maxA*2+1];
         for(int i=0; i<N; i++) {
-            d[A[i]+200]++;
+            d[A[i]+maxA]++;
         }
     
         long ans = 0;
-        for(int i=-200; i<=200; i++) {
-            for(int j=-200; j<i; j++) {
+        for(int i=-maxA; i<=maxA; i++) {
+            for(int j=-maxA; j<i; j++) {
                 long diff = (i-j)*(i-j);
-                ans += diff*d[200+i]*d[200+j];
+                ans += diff*d[maxA+i]*d[maxA+j];
             }
         }
         System.out.println(ans);
