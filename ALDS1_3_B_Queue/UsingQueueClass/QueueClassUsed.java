@@ -1,3 +1,5 @@
+package ALDS1_3_B_Queue.UsingQueueClass;
+
 import java.util.Queue;
 import java.util.AbstractMap;
 import java.util.LinkedList;

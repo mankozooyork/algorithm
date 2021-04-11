@@ -1,3 +1,5 @@
+package ALDS1_3_A_Stack;
+
 import java.util.Scanner;
 
 public class Main {

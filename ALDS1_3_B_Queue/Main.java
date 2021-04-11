@@ -1,3 +1,5 @@
+package ALDS1_3_B_Queue;
+
 import java.util.Scanner;
 
 class Main {

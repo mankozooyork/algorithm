@@ -1,3 +1,5 @@
+package codility.Lesson_08_Leader_EquiLeader;
+
 import java.util.*;
 
 public class Solution {

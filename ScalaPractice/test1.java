@@ -1,3 +1,5 @@
+package ScalaPractice;
+
 import java.math.BigInteger;
 
 public class test1 {

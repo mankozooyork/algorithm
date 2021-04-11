@@ -1,3 +1,5 @@
+package codility.Lesson_09_Maximum_Slice_Problem_MaxDoubleSliceSum;
+
 class Solution {
     public static void main(String[] args) {
         System.out.println(solution(new int[] {3,2,6,-1,4,5,-1,2}));

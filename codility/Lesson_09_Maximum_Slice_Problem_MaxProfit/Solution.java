@@ -1,3 +1,5 @@
+package codility.Lesson_09_Maximum_Slice_Problem_MaxProfit;
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(solution(new int[] {23171,21011,21123,21366,21013,21367}));

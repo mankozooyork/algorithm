@@ -1,4 +1,4 @@
-package codility.Lesson_11_Sieve_of_Eratosthenes;
+package codility.Lesson_11_Sieve_of_Eratosthenes_CountNonDivisible;
 import java.util.*;
 public class Solution {
     public static void main(String[] args) {

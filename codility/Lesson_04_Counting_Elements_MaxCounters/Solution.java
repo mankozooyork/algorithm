@@ -1,3 +1,5 @@
+package codility.Lesson_04_Counting_Elements_MaxCounters;
+
 import java.util.*;
 public class Solution {
     static int[] solution(int N, int[] A) {

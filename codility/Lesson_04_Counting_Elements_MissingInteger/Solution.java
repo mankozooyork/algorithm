@@ -1,3 +1,5 @@
+package codility.Lesson_04_Counting_Elements_MissingInteger;
+
 import java.util.*;
 
 class Solution {

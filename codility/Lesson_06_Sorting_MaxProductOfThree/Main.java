@@ -1,3 +1,5 @@
+package codility.Lesson_06_Sorting_MaxProductOfThree;
+
 import java.util.*;
 public class Main {
     public static void main(String[] args) {

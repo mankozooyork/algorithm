@@ -1,3 +1,5 @@
+package codility.Lesson_10_CountFactors;
+
 import java.util.*;
 public class Solution5 {
     public static void main(String[] args) {

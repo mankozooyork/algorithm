@@ -1,3 +1,5 @@
+package codility.Lesson_07_Stacks_and_Queues_Fish;
+
 import java.util.*;
 
 public class Solution {

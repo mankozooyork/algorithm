@@ -1,3 +1,5 @@
+package codility.Lesson_04_Counting_Elements_FrogRiverOne;
+
 import java.util.*;
 class Solution {
     public int solution(int X, int[] A) {

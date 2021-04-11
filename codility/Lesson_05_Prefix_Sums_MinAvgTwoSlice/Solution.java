@@ -1,3 +1,5 @@
+package codility.Lesson_05_Prefix_Sums_MinAvgTwoSlice;
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(solution(new int[] {4,2,2,5,1,5,8}));

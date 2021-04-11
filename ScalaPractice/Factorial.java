@@ -1,3 +1,5 @@
+package ScalaPractice;
+
 import java.util.Scanner;
 
 public class Factorial {

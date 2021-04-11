@@ -1,3 +1,5 @@
+package AtCoder.ABC191;
+
 import java.util.Scanner;
 public class MainA {
     public static void main(String[] args) {

@@ -1,3 +1,5 @@
+package codility.Lesson_05_Prefix_Sums_CountDiv;
+
 public class Solution {
     public static void main(String[] args) {
         System.out.println(solution(6,11,2));

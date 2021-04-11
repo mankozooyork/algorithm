@@ -1,3 +1,5 @@
+package codility.Lesson_06_Sorting_Triangle;
+
 import java.util.Arrays;
 
 public class Solution {

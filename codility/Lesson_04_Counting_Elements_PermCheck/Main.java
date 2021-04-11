@@ -1,3 +1,5 @@
+package codility.Lesson_04_Counting_Elements_PermCheck;
+
 import java.util.*;
 public class Main {
     public static void main(String[] args) {
